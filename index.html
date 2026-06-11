@@ -291,40 +291,7 @@
     .step-title { font-size: 15px; font-weight: 600; color: var(--white); }
     .step-desc { font-size: 13.5px; color: var(--white-2); line-height: 1.65; }
 
-    /* ── PROOF ── */
-    .proof-card {
-      background: var(--navy-2);
-      border: 0.5px solid var(--border);
-      border-radius: 12px; padding: 2.5rem;
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 3rem; align-items: center;
-    }
-    .proof-badge {
-      font-size: 11px; font-weight: 600;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--rose); margin-bottom: 1rem; display: block;
-    }
-    blockquote {
-      font-size: 1.25rem; font-weight: 400;
-      color: var(--white); line-height: 1.6;
-      margin-bottom: 1.25rem;
-      font-style: italic;
-    }
-    .proof-context { font-size: 13.5px; color: var(--white-2); line-height: 1.7; }
-    .metrics { display: flex; flex-direction: column; gap: 1.625rem; }
-    .metric { border-left: 2px solid var(--teal); padding-left: 1.25rem; }
-    .metric-num { font-size: 1.9rem; font-weight: 700; color: var(--teal); line-height: 1; }
-    .metric-lbl { font-size: 13px; color: var(--white-2); margin-top: 0.3rem; }
-
     /* ── ABOUT ── */
-    .about-grid { display: grid; grid-template-columns: 220px 1fr; gap: 4rem; align-items: start; }
-    .photo-wrap { border-radius: 10px; overflow: hidden; border: 0.5px solid var(--border); aspect-ratio: 3/4; background: var(--navy-3); }
-    .photo-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .about-text p { font-size: 15px; color: var(--white-2); line-height: 1.8; margin-bottom: 1.375rem; }
-    .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.75rem; }
-    .tag { padding: 0.25rem 0.75rem; border: 0.5px solid var(--border); border-radius: 100px; font-size: 11.5px; color: var(--white-2); }
-
-    /* ── ABOUT TWO-UP ── */
     .about-duo {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -349,12 +316,6 @@
       width: 64px; height: 64px; border-radius: 50%;
       object-fit: cover; flex-shrink: 0;
       border: 1.5px solid var(--border);
-    }
-    .profile-photo-placeholder {
-      width: 64px; height: 64px; border-radius: 50%; flex-shrink: 0;
-      background: var(--navy-3); border: 1.5px solid var(--border);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 20px; font-weight: 600; color: var(--white-3);
     }
     .profile-name {
       font-size: 1.25rem; font-weight: 700;
@@ -387,7 +348,9 @@
     .feat-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
     .feat-item { display: flex; align-items: flex-start; gap: 0.5rem; font-size: 12px; color: var(--white-2); }
     .feat-item::before { content: ''; width: 4px; height: 4px; border-radius: 50%; background: var(--teal); flex-shrink: 0; margin-top: 5px; }
-    .feat-item.rose::before { background: var(--rose); }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+    .tag { padding: 0.25rem 0.75rem; border: 0.5px solid var(--border); border-radius: 100px; font-size: 11.5px; color: var(--white-2); }
 
     /* ── CTA ── */
     #cta { background: var(--navy-3); border-top: 0.5px solid var(--border); text-align: center; }
@@ -417,9 +380,7 @@
       .two-col { grid-template-columns: 1fr; gap: 2.5rem; }
       .steps { grid-template-columns: 1fr; }
       .steps::before { display: none; }
-      .proof-card { grid-template-columns: 1fr; gap: 2rem; }
       .about-grid { grid-template-columns: 1fr; gap: 2rem; }
-      .photo-wrap { max-width: 180px; }
       .stats-bar { grid-template-columns: 1fr; }
       footer { flex-direction: column; align-items: flex-start; }
     }
@@ -697,34 +658,6 @@
         <div class="step-num">03</div>
         <div class="step-title">Track, report, expand</div>
         <div class="step-desc">Monthly AI visibility reports with citation tracking across all major tools. Bi-weekly calls on strategy. You watch the gap close.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── PROOF ── -->
-<section id="proof">
-  <div class="container">
-    <span class="label">Reference engagement</span>
-    <div class="proof-card">
-      <div>
-        <span class="proof-badge">In the field</span>
-        <blockquote>"Most of our competitors rank on Google. None of them appear when someone asks ChatGPT for a lawyer in our practice area."</blockquote>
-        <p class="proof-context">Our anchor client is a Toronto law firm. When we started, their AI visibility score across ChatGPT, Gemini, and Claude was 5 out of 100. That gap is the opportunity — and it is wider in immigration, family, and estate law, where competition for AI citations is still nearly zero.</p>
-      </div>
-      <div class="metrics">
-        <div class="metric">
-          <div class="metric-num">5 / 100</div>
-          <div class="metric-lbl">AI visibility score at engagement start — across ChatGPT, Gemini, Claude</div>
-        </div>
-        <div class="metric">
-          <div class="metric-num">$3,500 CAD</div>
-          <div class="metric-lbl">Monthly retainer + HST. One firm per practice area per city.</div>
-        </div>
-        <div class="metric">
-          <div class="metric-num">Exclusivity</div>
-          <div class="metric-lbl">We do not work with your competitors. One client per market.</div>
-        </div>
       </div>
     </div>
   </div>
